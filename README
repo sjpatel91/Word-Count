@@ -1,0 +1,33 @@
+# WordCounter QE (Bina-wordcounter-Shruti-Patel) # 
+
+The word counter program is written using core JDK libraries and no other external API is used. The project contains:
+
+  - code: includes the logic for counting the words.
+    * WordCounter.java 
+    * Users.java 
+  - test: JUnit testing for the code.
+    * WordCountTest.java 
+  - bonus: the word counter is **thread-safe**.
+  - Regex pattern is used for valid words.
+  - IDE: Eclipse
+  
+  
+#### Description ####
+##### Why I tested the word counter the way I did #####
+>I have created different test suites for different scenarios which individually consists of test cases.
+
+>The product requirements described for a specific style of word counter. As the requirement specified that the file should be read from disk, I first wanted to create a test suite related to the properties related to file which has test cases for file, for example, whether the file exists or not.
+
+>Next, moving on to the end result, that is we should get the count in specific datatype. So, I tried to test the actual value of count with expected value.
+
+>Other product requirement was for words. Therefore, I tested the characteristics of words including the methods for direct values(specifying the value in ""), using Regex pattern and using character functions, for example, the wordlist's contain all specified boundaried words in both positive and negative scenarios. 
+
+>I tried to use all asserts and every comment in my code states what I tried to test. In additon, I tried to use fixtures in the test code.
+
+##### Why do I think my code is sufficient to be merged #####
+>I tried to perform the full coverage tests and mainly focused on the scenarios based for file, word count and characteristics of word, as these were the product requirements. 
+
+##### Additional Testing #####
+> After the code is merged, I would like to add test for the extension of file, counting occurrence of each word and would test for other valid words. We need to do integration testing to see whether the complete product runs successfully after merging the code.
+
+**The overall time spent for this exercise is around 10 hours.**
